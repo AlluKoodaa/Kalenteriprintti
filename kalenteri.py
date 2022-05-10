@@ -6,6 +6,7 @@ import datetime
 def tulostus(x, y, z): # x on alku, y on loppu, z on päiviä yhteensä
     paivat = [i for i in range(1, z+1)]
     print("Kalenteri näyttää seuraavalta:")
+    print()
     print("Ma Ti Ke To Pe La Su")
     tuloste = ''
     pva = 0
@@ -24,7 +25,7 @@ def tulostus(x, y, z): # x on alku, y on loppu, z on päiviä yhteensä
             continue
         tuloste += ' '
         pva +=1
-    print(tuloste, end='')
+    print(tuloste)
 
 def kuukausi(kk):
     kuukaudet = ["tammikuu", "helmikuu", "maaliskuu", "huhtikuu", "toukokuu",
@@ -47,6 +48,7 @@ def paaohjelma():
     print(f"Vuoden {vuosi} {kuu}ssa {paivia} päivää.")
     loppu = datetime.date(vuosi, kk, loppupva.days).weekday()
     tulostus(alku, loppu, paivia)
+    print()
     print("Kiitos ohjelman käytöstä.")
 
 paaohjelma()
