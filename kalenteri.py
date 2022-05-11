@@ -1,4 +1,4 @@
-#--AlluKoodaa--#
+#----AlluKoodaa----#
 
 import datetime
 
@@ -53,4 +53,4 @@ def paaohjelma():
 
 paaohjelma()
 
-#--eof--#
+#----eof----#
